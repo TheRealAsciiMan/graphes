@@ -62,6 +62,3 @@ for i in range(n):
 print(matrice)
 
 
-def dico_to_matrix(Gr: dict) -> list:
-    nombre_de_noeuds = len(Gr)
-    matrix = [[0] * nombre_de_noeuds for _ in range(nombre_de_noeuds)]

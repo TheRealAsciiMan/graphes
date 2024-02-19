@@ -68,4 +68,10 @@ f.enfiler(sommet)
 sommets_visites.append(sommet)
 bfs_recur(G,f,sommets_visites)
 
-
+def Solution(end, parents):
+    chemin = []
+    courant = end
+    while courant != None:
+        chemin = [courant] + chemin
+        courant = parents[courant]
+    return chemin
